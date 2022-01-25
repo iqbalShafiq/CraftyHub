@@ -1,4 +1,4 @@
-package space.iqbalsyafiq.craftyhub
+package space.iqbalsyafiq.craftyhub.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
