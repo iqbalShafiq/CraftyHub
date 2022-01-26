@@ -16,4 +16,10 @@
     <string name="add_button">add button</string>
     <string name="add_photo">Add Photo</string>
     <string name="back">Back</string>
+    <string name="don_t_worry">Don\'t Worry!</string>
+    <string name="forgot_password_message">Enter your email and you will get a password reset link in the email.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="success">Success</string>
+    <string name="success_forgot_password_icon">success forgot password icon</string>
+    <string name="reset_link_has_been_sent_to_your_email">Reset link has been sent to your email</string>
 </resources>
