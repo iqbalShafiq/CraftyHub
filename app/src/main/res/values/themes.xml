@@ -14,4 +14,66 @@
         <!-- Customize your theme here. -->
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
     </style>
+
+    <!-- Text -->
+    <style name="SemiBold36Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="SemiBold24Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SemiBold18Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SemiBold14Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Medium18Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Medium14Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Regular18Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Regular14Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Regular12Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_accent</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Light12Sp" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/light_disabled</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>
