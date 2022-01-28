@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "739960724328",
+    "project_id": "crafty-hub",
+    "storage_bucket": "crafty-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739960724328:android:c4caa5da5ea44173fc94dd",
+        "android_client_info": {
+          "package_name": "space.iqbalsyafiq.craftyhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739960724328-ghchdcb3semmb0au7fd3lclho4hbsg6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADKb8ZPFSEVyTOwSRhXVhavpMw1aIp8s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739960724328-ghchdcb3semmb0au7fd3lclho4hbsg6f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

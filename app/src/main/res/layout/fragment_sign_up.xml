@@ -92,6 +92,14 @@
             android:id="@+id/layoutConfirmationPassword"
             layout="@layout/layout_edit_text_general" />
 
+        <ProgressBar
+            android:id="@+id/progressLoading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="24dp"
+            android:visibility="gone" />
+
         <Button
             android:id="@+id/btnSignUp"
             style="@style/Medium18Sp"
