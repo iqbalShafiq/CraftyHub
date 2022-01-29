@@ -24,4 +24,8 @@
     <string name="reset_link_has_been_sent_to_your_email">Reset link has been sent to your email</string>
     <string name="choose_one">Choose one</string>
     <string name="camera_icon">camera icon</string>
+    <string name="popular_user">Popular User</string>
+    <string name="trending_craft">Trending Craft</string>
+    <string name="timelines">Timelines</string>
+    <string name="public_icon">public icon</string>
 </resources>
