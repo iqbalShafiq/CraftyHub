@@ -22,4 +22,6 @@
     <string name="success">Success</string>
     <string name="success_forgot_password_icon">success forgot password icon</string>
     <string name="reset_link_has_been_sent_to_your_email">Reset link has been sent to your email</string>
+    <string name="choose_one">Choose one</string>
+    <string name="camera_icon">camera icon</string>
 </resources>

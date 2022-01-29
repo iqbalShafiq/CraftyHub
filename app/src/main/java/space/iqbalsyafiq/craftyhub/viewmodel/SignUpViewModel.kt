@@ -5,12 +5,15 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.ktx.storage
 import kotlinx.coroutines.launch
 
 class SignUpViewModel(application: Application) : BaseViewModel(application) {
 
     private var auth = FirebaseAuth.getInstance()
     private var db = FirebaseFirestore.getInstance()
+    private var storage = Firebase.storage
 
     // live data
     val loading = MutableLiveData<Boolean>()

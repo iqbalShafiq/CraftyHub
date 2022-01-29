@@ -1,13 +1,24 @@
 package space.iqbalsyafiq.craftyhub.view.fragments.authentication
 
+import android.app.Dialog
+import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.provider.MediaStore
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import com.bumptech.glide.Glide
 import space.iqbalsyafiq.craftyhub.R
+import space.iqbalsyafiq.craftyhub.databinding.DialogPictureBinding
 import space.iqbalsyafiq.craftyhub.databinding.FragmentSignUpBinding
 import space.iqbalsyafiq.craftyhub.utils.Util.Companion.setEditTextView
 import space.iqbalsyafiq.craftyhub.viewmodel.SignUpViewModel
@@ -16,6 +27,11 @@ class SignUpFragment : Fragment() {
 
     private lateinit var binding: FragmentSignUpBinding
     private val viewModel: SignUpViewModel by activityViewModels()
+
+    companion object {
+        const val OPEN_CAMERA = 0
+        const val OPEN_GALLERY = 1
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -81,6 +97,10 @@ class SignUpFragment : Fragment() {
 
     private fun setViewEvent() {
         with(binding) {
+            containerPhoto.setOnClickListener {
+                showDialog()
+            }
+
             btnSignUp.setOnClickListener {
                 val fullName = layoutFullname.etText.text.toString()
                 val userName = layoutUsername.etText.text.toString()
@@ -103,6 +123,80 @@ class SignUpFragment : Fragment() {
             btnBack.setOnClickListener {
                 activity?.onBackPressed()
             }
+        }
+    }
+
+    private fun showDialog() {
+        val dialog = Dialog(requireContext())
+        val dialogBinding = DialogPictureBinding.inflate(layoutInflater)
+
+        dialog.apply {
+            requestWindowFeature(Window.FEATURE_NO_TITLE)
+            setCancelable(true)
+            setContentView(dialogBinding.root)
+        }
+
+        with(dialogBinding) {
+            ivCamera.setOnClickListener {
+                getPicture(OPEN_CAMERA)
+                dialog.dismiss()
+            }
+
+            ivGallery.setOnClickListener {
+                getPicture(OPEN_GALLERY)
+                dialog.dismiss()
+            }
+        }
+
+        dialog.apply {
+            window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            show()
+            window?.setLayout(800, 600)
+        }
+    }
+
+    private fun getPicture(openCode: Int) {
+        when (openCode) {
+            OPEN_CAMERA -> {
+                val takePicture = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                startActivityForResult(takePicture, OPEN_CAMERA)
+            }
+
+            OPEN_GALLERY -> {
+                val pickPhoto = Intent(
+                    Intent.ACTION_PICK,
+                    MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+                )
+                startActivityForResult(pickPhoto, OPEN_GALLERY)
+            }
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, imageReturnedIntent: Intent?) {
+        super.onActivityResult(requestCode, resultCode, imageReturnedIntent)
+        when (requestCode) {
+            OPEN_CAMERA -> if (resultCode == AppCompatActivity.RESULT_OK) {
+                val selectedImage: Bitmap? = imageReturnedIntent?.extras?.get("data") as Bitmap
+                applyImage(selectedImage)
+            }
+            OPEN_GALLERY -> if (resultCode == AppCompatActivity.RESULT_OK) {
+                val selectedImage = imageReturnedIntent?.data
+                Log.d("SignUpFragment", "onActivityResult: $selectedImage")
+                applyImage(selectedImage)
+            }
+        }
+    }
+
+    private fun applyImage(selectedImage: Any?) {
+        with(binding) {
+            Glide.with(requireContext())
+                .asBitmap()
+                .load(selectedImage)
+                .circleCrop()
+                .into(ivPhotoProfile)
+            ivPhotoProfile.setBackgroundResource(R.drawable.bg_circle)
+            tvAddPhoto.visibility = View.GONE
+            ivAddPhoto.visibility = View.GONE
         }
     }
 
