@@ -6,6 +6,7 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/drawable/bg_circle.xml" value="0.1787037037037037" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/drawable/bg_circle_stroke.xml" value="0.106" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/drawable/bg_radius16dp.xml" value="0.113" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/drawable/bg_radius_vertical.xml" value="0.1315" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/drawable/bg_top_radius16dp.xml" value="0.1315" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/drawable/ic_home.xml" value="0.1315" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/drawable/ic_username.xml" value="0.1" />
@@ -13,7 +14,7 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/dialog_picture.xml" value="0.264" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_app.xml" value="0.2" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_creator.xml" value="0.25" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_dashboard.xml" value="0.176" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_forgot_password.xml" value="0.264" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_message.xml" value="0.25" />
@@ -21,6 +22,10 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_search.xml" value="0.25" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_sign_up.xml" value="0.176" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/fragment_success_forgot_password.xml" value="0.176" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/item_popular_user.xml" value="0.536" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/item_timeline.xml" value="0.176" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/item_timelines.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/item_trending_craft.xml" value="0.264" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/layout_edit_text_email.xml" value="0.2" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/layout_edit_text_general.xml" value="0.176" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/CraftyHub/app/src/main/res/layout/layout_edit_text_password.xml" value="0.176" />
