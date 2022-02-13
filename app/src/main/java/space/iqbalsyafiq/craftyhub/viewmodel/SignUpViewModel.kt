@@ -7,12 +7,17 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class SignUpViewModel(application: Application) : BaseViewModel(application) {
+@HiltViewModel
+class SignUpViewModel @Inject constructor(
+    application: Application,
+    private val auth: FirebaseAuth,
+    private val db: FirebaseFirestore
+) : BaseViewModel(application) {
 
-    private var auth = FirebaseAuth.getInstance()
-    private var db = FirebaseFirestore.getInstance()
     private var storage = Firebase.storage
 
     // live data

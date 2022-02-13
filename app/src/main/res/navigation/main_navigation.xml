@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/appFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -48,13 +48,4 @@
         android:name="space.iqbalsyafiq.craftyhub.view.fragments.authentication.SuccessForgotPasswordFragment"
         android:label="fragment_success_forgot_password"
         tools:layout="@layout/fragment_success_forgot_password" />
-    <fragment
-        android:id="@+id/appFragment"
-        android:name="space.iqbalsyafiq.craftyhub.view.fragments.AppFragment"
-        android:label="fragment_app"
-        tools:layout="@layout/fragment_app">
-        <action
-            android:id="@+id/action_appFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
 </navigation>
